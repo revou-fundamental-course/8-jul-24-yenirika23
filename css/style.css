@@ -1,0 +1,140 @@
+/* CSS for Kalkulator BMI */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color:  #2196F3;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    padding: 0 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+section {
+    flex: 1;
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #4c8baf;
+    padding-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.gender-radio {
+    display: flex;
+    gap: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="number"], select, button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #3a628d;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #3660c4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+button:hover {
+    background-color: #238c9f;
+}
+
+#bmi-result-section {
+    flex-basis: 45%;
+}
+
+#result-container {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#bmi-result {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+#download-result, #consultation, #registration {
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#download-result:hover, #consultation:hover, #registration:hover {
+    background-color: #1976D2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #031f3c;
+    color: white;
+}
+
+footer a img {
+    width: 150px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        flex-basis: 100%;
+    }
+}
